@@ -6,7 +6,7 @@ const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
 		<PanelHeader>Example</PanelHeader>
 		{fetchedUser &&
-		<Group title="User Data Fetched with VK Connect">
+		<Group title="Всё, что я сделал за 3 часа:">
 			<ListItem
 				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
 				description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
@@ -17,8 +17,15 @@ const Home = ({ id, go, fetchedUser }) => (
 
 		<Group title="Navigation Example">
 			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Show me the Persik, please
+				<Button size="x1" level="3" onClick={go} data-to="persik">
+					PLS dont touch it!
+				</Button>
+			</Div>
+		</Group>
+		<Group title="Navigation Example2">
+			<Div>
+				<Button size="x3" level="1" onClick={go} data-to="pup">
+					Second time
 				</Button>
 			</Div>
 		</Group>
