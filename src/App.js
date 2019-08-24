@@ -38,6 +38,7 @@ class App extends React.Component {
 			<View activePanel={this.state.activePanel}>
 				<Home id="home" fetchedUser={this.state.fetchedUser} go={this.go} />
 				<Persik id="persik" go={this.go} />
+				<Pup id="pup" go={this.go} />
 			</View>
 		);
 	}
