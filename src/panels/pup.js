@@ -17,7 +17,7 @@ const Pup = props => (
 		>
 			test2
 		</PanelHeader>
-		
+		fawf
 	</Panel>
 );
 
