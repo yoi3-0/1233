@@ -17,7 +17,7 @@ const Persik = props => (
 		>
 			Trollolololo
 		</PanelHeader>
-		<img className="Persik" src={persik} alt="Persik The Cat"/>
+		<img className="Persik" src={persik} alt="Persik The superCat"/>
 	</Panel>
 );
 
