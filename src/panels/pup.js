@@ -17,7 +17,7 @@ const Pup = props => (
 		>
 			test2
 		</PanelHeader>
-		fawf
+		<img className="Poop" src={pup2} alt="Persik The Cat"/>
 	</Panel>
 );
 
