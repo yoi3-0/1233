@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Panel, PanelHeader, HeaderButton, platform, IOS} from '@vkontakte/vkui';
+import {Panel, PanelHeader, HeaderButton, platform, Input, Select, IOS} from '@vkontakte/vkui';
 import persik from '../img/troll.jpg';
 import './Persik.css';
+import Icon16Verified from '@vkontakte/icons/dist/16/verified';
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 
@@ -15,9 +16,14 @@ const Persik = props => (
 				{osname === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
-			Trollolololo
+			Trollolololo 
 		</PanelHeader>
-		<img className="Persik" src={persik} alt="Persik The superCat"/>
+		<img className="Persik" src={persik} onClick={props.go} data-to="home"  alt="Persik The superCat"/>
+		<Input type="text" defaultValue="Кого вы видите?" alignment="center" />
+		<Select placeholder="Тут можно ВыБрАтЬ<Icon16Verified/>">
+  		<option value="m">Персик</option>
+ 		 <option value="f">Не Персик</option>
+</Select>
 	</Panel>
 );
 
